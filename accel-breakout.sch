@@ -1,0 +1,390 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Motion:L3GD20 U?
+U 1 1 5AC3AE88
+P 5100 2000
+F 0 "U?" H 5100 1314 50  0000 C CNN
+F 1 "L3GD20" H 5100 1223 50  0000 C CNN
+F 2 "LGA-16" H 5100 2000 50  0001 C CIN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00036465.pdf" H 5100 2000 50  0001 C CNN
+	1    5100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AC3AF5E
+P 4350 2650
+F 0 "#PWR?" H 4350 2400 50  0001 C CNN
+F 1 "GND" H 4355 2477 50  0000 C CNN
+F 2 "" H 4350 2650 50  0001 C CNN
+F 3 "" H 4350 2650 50  0001 C CNN
+	1    4350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2000 4350 2000
+Wire Wire Line
+	4350 2000 4350 2100
+Wire Wire Line
+	4350 2100 4400 2100
+Wire Wire Line
+	4350 2100 4350 2200
+Wire Wire Line
+	4350 2200 4400 2200
+Connection ~ 4350 2100
+Wire Wire Line
+	4350 2200 4350 2300
+Wire Wire Line
+	4350 2300 4400 2300
+Connection ~ 4350 2200
+Wire Wire Line
+	4350 2300 4350 2400
+Wire Wire Line
+	4350 2400 4400 2400
+Connection ~ 4350 2300
+Wire Wire Line
+	4350 2650 4350 2600
+Connection ~ 4350 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5AC3B041
+P 5100 1300
+F 0 "#PWR?" H 5100 1150 50  0001 C CNN
+F 1 "+3.3V" H 5115 1473 50  0000 C CNN
+F 2 "" H 5100 1300 50  0001 C CNN
+F 3 "" H 5100 1300 50  0001 C CNN
+	1    5100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1400 5200 1350
+Wire Wire Line
+	5200 1350 5100 1350
+Wire Wire Line
+	5100 1350 5100 1300
+Wire Wire Line
+	5000 1400 5000 1350
+Wire Wire Line
+	5000 1350 5100 1350
+Connection ~ 5100 1350
+$Comp
+L Device:R R?
+U 1 1 5AC3B190
+P 6050 1050
+F 0 "R?" H 6120 1096 50  0000 L CNN
+F 1 "10k" H 6120 1005 50  0000 L CNN
+F 2 "" V 5980 1050 50  0001 C CNN
+F 3 "~" H 6050 1050 50  0001 C CNN
+	1    6050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5AC3B1D8
+P 6300 1050
+F 0 "R?" H 6370 1096 50  0000 L CNN
+F 1 "10k" H 6370 1005 50  0000 L CNN
+F 2 "" V 6230 1050 50  0001 C CNN
+F 3 "~" H 6300 1050 50  0001 C CNN
+	1    6300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 900  6050 850 
+Wire Wire Line
+	6050 850  6300 850 
+Wire Wire Line
+	6300 850  6300 900 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5AC3B320
+P 6050 800
+F 0 "#PWR?" H 6050 650 50  0001 C CNN
+F 1 "+3.3V" H 6065 973 50  0000 C CNN
+F 2 "" H 6050 800 50  0001 C CNN
+F 3 "" H 6050 800 50  0001 C CNN
+	1    6050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 800  6050 850 
+Connection ~ 6050 850 
+Wire Wire Line
+	6050 1700 5800 1700
+Wire Wire Line
+	5800 1800 6300 1800
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5AC3B8BE
+P 6050 1450
+F 0 "JP?" V 6050 1518 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6095 1518 50  0001 L CNN
+F 2 "" H 6050 1450 50  0001 C CNN
+F 3 "~" H 6050 1450 50  0001 C CNN
+	1    6050 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5AC3B942
+P 6300 1450
+F 0 "JP?" V 6300 1518 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6345 1518 50  0001 L CNN
+F 2 "" H 6300 1450 50  0001 C CNN
+F 3 "~" H 6300 1450 50  0001 C CNN
+	1    6300 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 1200 6050 1300
+Wire Wire Line
+	6300 1200 6300 1300
+Wire Wire Line
+	6050 1600 6050 1700
+Wire Wire Line
+	6300 1600 6300 1800
+Wire Wire Line
+	5100 2600 4350 2600
+Connection ~ 4350 2600
+Wire Wire Line
+	4350 2600 4350 2400
+$Comp
+L Device:R R?
+U 1 1 5AC3C8FE
+P 6550 1050
+F 0 "R?" H 6620 1096 50  0000 L CNN
+F 1 "10k" H 6620 1005 50  0000 L CNN
+F 2 "" V 6480 1050 50  0001 C CNN
+F 3 "~" H 6550 1050 50  0001 C CNN
+	1    6550 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5AC3C924
+P 6800 1050
+F 0 "R?" H 6870 1096 50  0000 L CNN
+F 1 "10k" H 6870 1005 50  0000 L CNN
+F 2 "" V 6730 1050 50  0001 C CNN
+F 3 "~" H 6800 1050 50  0001 C CNN
+	1    6800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5AC3C94A
+P 6550 1450
+F 0 "JP?" V 6550 1518 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6595 1518 50  0001 L CNN
+F 2 "" H 6550 1450 50  0001 C CNN
+F 3 "~" H 6550 1450 50  0001 C CNN
+	1    6550 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5AC3C970
+P 6800 1450
+F 0 "JP?" V 6800 1518 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6845 1518 50  0001 L CNN
+F 2 "" H 6800 1450 50  0001 C CNN
+F 3 "~" H 6800 1450 50  0001 C CNN
+	1    6800 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 900  6550 850 
+Wire Wire Line
+	6550 850  6300 850 
+Connection ~ 6300 850 
+Wire Wire Line
+	6800 900  6800 850 
+Wire Wire Line
+	6800 850  6550 850 
+Connection ~ 6550 850 
+Wire Wire Line
+	6550 1200 6550 1300
+Wire Wire Line
+	6800 1200 6800 1300
+Wire Wire Line
+	6550 1600 6550 2100
+Wire Wire Line
+	6550 2200 5800 2200
+Wire Wire Line
+	5800 2300 6800 2300
+Wire Wire Line
+	6800 2300 6800 2200
+Wire Wire Line
+	6050 1700 7100 1700
+Connection ~ 6050 1700
+Wire Wire Line
+	6300 1800 7100 1800
+Connection ~ 6300 1800
+Wire Wire Line
+	5800 1900 7100 1900
+Wire Wire Line
+	5800 2000 7100 2000
+Wire Wire Line
+	6550 2100 7100 2100
+Connection ~ 6550 2100
+Wire Wire Line
+	6550 2100 6550 2200
+Wire Wire Line
+	6800 2200 7100 2200
+Connection ~ 6800 2200
+Wire Wire Line
+	6800 2200 6800 1600
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 5AC3FDCE
+P 7300 2000
+F 0 "J?" H 7380 1992 50  0000 L CNN
+F 1 "Conn_01x08" H 7380 1901 50  0000 L CNN
+F 2 "" H 7300 2000 50  0001 C CNN
+F 3 "~" H 7300 2000 50  0001 C CNN
+	1    7300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5AC3FE89
+P 7100 2550
+F 0 "#PWR?" H 7100 2400 50  0001 C CNN
+F 1 "+3V3" V 7115 2678 50  0000 L CNN
+F 2 "" H 7100 2550 50  0001 C CNN
+F 3 "" H 7100 2550 50  0001 C CNN
+	1    7100 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 2400 7050 2400
+Wire Wire Line
+	7050 2400 7050 2550
+Wire Wire Line
+	7050 2550 7100 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5AC4064D
+P 6900 2550
+F 0 "#PWR?" H 6900 2300 50  0001 C CNN
+F 1 "GND" H 6905 2377 50  0000 C CNN
+F 2 "" H 6900 2550 50  0001 C CNN
+F 3 "" H 6900 2550 50  0001 C CNN
+	1    6900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2550 6900 2300
+Wire Wire Line
+	6900 2300 7100 2300
+Wire Wire Line
+	4400 1600 4350 1600
+Wire Wire Line
+	4350 1600 4350 1350
+Wire Wire Line
+	4350 1350 5000 1350
+Connection ~ 5000 1350
+$Comp
+L Device:C C?
+U 1 1 5AC4187A
+P 3950 1500
+F 0 "C?" H 4065 1546 50  0000 L CNN
+F 1 "0.1u" H 4065 1455 50  0000 L CNN
+F 2 "" H 3988 1350 50  0001 C CNN
+F 3 "~" H 3950 1500 50  0001 C CNN
+	1    3950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AC4429D
+P 3500 1500
+F 0 "C?" H 3615 1546 50  0000 L CNN
+F 1 "0.1u" H 3615 1455 50  0000 L CNN
+F 2 "" H 3538 1350 50  0001 C CNN
+F 3 "~" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5AC44424
+P 3150 1500
+F 0 "C?" H 3268 1546 50  0000 L CNN
+F 1 "CP" H 3268 1455 50  0000 L CNN
+F 2 "" H 3188 1350 50  0001 C CNN
+F 3 "~" H 3150 1500 50  0001 C CNN
+	1    3150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1350 3950 1350
+Connection ~ 4350 1350
+Wire Wire Line
+	3950 1350 3500 1350
+Connection ~ 3950 1350
+Wire Wire Line
+	3500 1350 3150 1350
+Connection ~ 3500 1350
+Wire Wire Line
+	3150 1650 3500 1650
+Wire Wire Line
+	3500 1650 3950 1650
+Connection ~ 3500 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5AC48A5F
+P 3500 1650
+F 0 "#PWR?" H 3500 1400 50  0001 C CNN
+F 1 "GND" H 3505 1477 50  0000 C CNN
+F 2 "" H 3500 1650 50  0001 C CNN
+F 3 "" H 3500 1650 50  0001 C CNN
+	1    3500 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 3550 1300 2    50   ~ 0
+Close to Vdd
+Text Notes 4350 1300 2    50   ~ 0
+Close to VddIO
+$Comp
+L Device:C C?
+U 1 1 5AC48AF8
+P 3950 1950
+F 0 "C?" H 4065 1996 50  0000 L CNN
+F 1 "1n" H 4065 1905 50  0000 L CNN
+F 2 "" H 3988 1800 50  0001 C CNN
+F 3 "~" H 3950 1950 50  0001 C CNN
+F 4 "16V" H 3950 1950 50  0001 C CNN "Voltage"
+	1    3950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AC48B3A
+P 3950 2200
+F 0 "#PWR?" H 3950 1950 50  0001 C CNN
+F 1 "GND" H 3955 2027 50  0000 C CNN
+F 2 "" H 3950 2200 50  0001 C CNN
+F 3 "" H 3950 2200 50  0001 C CNN
+	1    3950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1800 4400 1800
+Wire Wire Line
+	3950 2100 3950 2200
+$EndSCHEMATC
