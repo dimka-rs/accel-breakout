@@ -20,7 +20,7 @@ U 1 1 5AC3AE88
 P 5100 2000
 F 0 "U1" H 5100 1314 50  0000 C CNN
 F 1 "L3GD20" H 5100 1223 50  0000 C CNN
-F 2 "LGA-16" H 5100 2000 50  0001 C CIN
+F 2 "accel-gyro:LGA-16" H 5100 2000 50  0001 C CIN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00036465.pdf" H 5100 2000 50  0001 C CNN
 	1    5100 2000
 	1    0    0    -1  

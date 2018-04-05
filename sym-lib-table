@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name accel-breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/accel-breakout-rescue.lib)(options "")(descr ""))
+  (lib (name accel-gyro)(type Legacy)(uri /home/dimka/repos/kicad-libs/accel-gyro.lib)(options "")(descr ""))
 )
